@@ -1,0 +1,7 @@
+.text {
+    display: flex;
+    justify-content: center;
+    color: #00579d;
+    font-weight: 500;
+    font-size: medium;
+}
