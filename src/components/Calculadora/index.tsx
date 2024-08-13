@@ -4,11 +4,11 @@ import Especiais from './database/especiais.json'
 import './styles.css';
 
 interface Props {
-  time: number,
+  setSearch: any
   setTime: any
 }
 
-export default function Calculadora({time, setTime}: Props) {
+export default function Calculadora({ setTime, setSearch }: Props) {
   const [details, setDetails] = useState<string[]>([])
   const [totalTime, setTotalTime] = useState(0)
   const [data, setData] = useState<any>();
@@ -26,7 +26,6 @@ export default function Calculadora({time, setTime}: Props) {
   }, [])
 
   useEffect(() => {
-    console.log(formData)
     let timeService = 0
     let timeSpecial = 0
     if (formData.materialEspecial !== '') {
@@ -35,7 +34,7 @@ export default function Calculadora({time, setTime}: Props) {
     if (formData.servico !== '') {
       timeService = data.Data.find((item: any) => item.Serviço === formData.servico)[formData.tamanhoMaquina]
     }
-    setTime(timeSpecial > timeService ? timeSpecial : timeService)
+
     setTotalTime(timeSpecial > timeService ? timeSpecial : timeService)
   }, [formData, specials, data, setTime])
 
@@ -51,8 +50,9 @@ export default function Calculadora({time, setTime}: Props) {
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    console.log('Dados do formulário:', formData);
-    // Aqui você pode enviar os dados para o seu backend
+    console.log(totalTime)
+    setSearch(true)
+    setTime(totalTime)
   };
 
   return (
@@ -136,9 +136,9 @@ export default function Calculadora({time, setTime}: Props) {
         </select>
       </div>
 
-      <div className="form__button">
-        Tempo total de Serviço: {totalTime} dias
-      </div>
+      <button className="form__button">
+        Calcular Tempo Total de Serviço
+      </button>
     </form>
   );
 }

@@ -1,0 +1,11 @@
+.cont {
+    right: 0;
+    top: 20px;
+    position: absolute;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 20vw;
+    max-width: 500px;
+}
