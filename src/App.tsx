@@ -17,12 +17,14 @@ function App() {
   }, [])
 
   useEffect(() => {
-    console.log(data)
-  }, [data])
+    console.log(formData)
+  }, [formData])
 
   const handleChange = (event: any) => {
     const { name, value } = event.target;
-    setData(Database.filter(item => value === item.Details)[0]);
+    if (value !== data?.Details && name === 'nomeMaquina') {
+      setData(Database.filter(item => value === item.Details)[0]);
+    }
     setFormData({ ...formData, [name]: value });
   };
 
@@ -60,13 +62,19 @@ function App() {
           <label htmlFor="tamanhoMaquina" className="form__label">
             Tamanho da Carcaça:
           </label>
-          <input
-            type="text"
+          <select
             id="tamanhoMaquina"
             name="tamanhoMaquina"
             value={formData.tamanhoMaquina}
             onChange={handleChange}
-            className="form__input" />
+            className="form__input" >
+            <option value="">Selecione o tamanho</option>
+            {data !== undefined && data.Columns.map((column: any, index: any) => (
+              <option key={index} value={column}>
+                {column}
+              </option>
+            ))}
+          </select>
         </div>
 
         <div className="form__group">
