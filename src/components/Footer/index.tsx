@@ -7,7 +7,7 @@ export default function Footer() {
             <footer className="foot">
                 <p className="text">Desenvolvido e Prototipado por Robert Aron Zimmermann robertn@weg.net</p>
             </footer>
-            <img src={Logo} alt='Logotipo WEG' />
+            <img src={Logo} alt='Logotipo WEG' className='weg_image' />
         </>
     )
 }

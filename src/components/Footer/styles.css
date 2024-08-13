@@ -1,7 +1,12 @@
 .text {
     display: flex;
     justify-content: center;
+    text-align: center;
     color: #00579d;
     font-weight: 500;
     font-size: medium;
+}
+
+.weg_image {
+    width: 400px;
 }
