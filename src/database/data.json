@@ -1,0 +1,334 @@
+[
+    {
+        "Details": "M GAIOLA",
+        "Columns": [
+            "Serviço",
+            "280/315/400/450",
+            "500/560/630/710/800",
+            "900/1000/1120"
+        ],
+        "Data": [
+            {
+                "Serviço": "Manutenção preventiva ",
+                "280/315/400/450": 55,
+                "500/560/630/710/800": 55,
+                "900/1000/1120": 55
+            },
+            {
+                "Serviço": "Rebobinamento do estator",
+                "280/315/400/450": 65,
+                "500/560/630/710/800": 65,
+                "900/1000/1120": 75
+            },
+            {
+                "Serviço": "Substituição dos aneis de curto da gaiola do rotor",
+                "280/315/400/450": 65,
+                "500/560/630/710/800": 65,
+                "900/1000/1120": 65
+            },
+            {
+                "Serviço": "Reeembarralhamento do pacote de chapas ",
+                "280/315/400/450": 65,
+                "500/560/630/710/800": 65,
+                "900/1000/1120": 75
+            },
+            {
+                "Serviço": "Substituição do pacote de chapas estator",
+                "280/315/400/450": 65,
+                "500/560/630/710/800": 65,
+                "900/1000/1120": 75
+            },
+            {
+                "Serviço": "Substituição do rotor completo",
+                "280/315/400/450": 70,
+                "500/560/630/710/800": 70,
+                "900/1000/1120": 85
+            },
+            {
+                "Serviço": "Substituição do eixo",
+                "280/315/400/450": 70,
+                "500/560/630/710/800": 70,
+                "900/1000/1120": 85
+            },
+            {
+                "Serviço": "Substituição dos mancais",
+                "280/315/400/450": 70,
+                "500/560/630/710/800": 70,
+                "900/1000/1120": 70
+            },
+            {
+                "Serviço": "Substituição de tubos do trocador de calor",
+                "280/315/400/450": 70,
+                "500/560/630/710/800": 70,
+                "900/1000/1120": 70
+            }
+        ]
+    },
+    {
+        "Details": "M ANÉIS",
+        "Columns": [
+            "Serviço",
+            "280/315/355/400/450",
+            "500/560/630/710/800",
+            "900/1000/1120"
+        ],
+        "Data": [
+            {
+                "Serviço": "Manutenção preventiva",
+                "280/315/355/400/450": 57,
+                "500/560/630/710/800": 57,
+                "900/1000/1120": 57
+            },
+            {
+                "Serviço": "Rebobinamento do estator ",
+                "280/315/355/400/450": 67,
+                "500/560/630/710/800": 70,
+                "900/1000/1120": 70
+            },
+            {
+                "Serviço": "Rebobinamento do rotor ",
+                "280/315/355/400/450": 67,
+                "500/560/630/710/800": 70,
+                "900/1000/1120": 70
+            },
+            {
+                "Serviço": "Reeembarralhamento do pacote de chapas estator",
+                "280/315/355/400/450": 67,
+                "500/560/630/710/800": 70,
+                "900/1000/1120": 70
+            },
+            {
+                "Serviço": "Substituição do pacote de chapas estator",
+                "280/315/355/400/450": 67,
+                "500/560/630/710/800": 70,
+                "900/1000/1120": 70
+            },
+            {
+                "Serviço": "Substituição do rotor completo",
+                "280/315/355/400/450": 70,
+                "500/560/630/710/800": 85,
+                "900/1000/1120": 85
+            },
+            {
+                "Serviço": "Substituição do eixo",
+                "280/315/355/400/450": 70,
+                "500/560/630/710/800": 85,
+                "900/1000/1120": 85
+            },
+            {
+                "Serviço": "Substituição dos mancais",
+                "280/315/355/400/450": 70,
+                "500/560/630/710/800": 70,
+                "900/1000/1120": 70
+            },
+            {
+                "Serviço": "Substituição do trocador de calor",
+                "280/315/355/400/450": 70,
+                "500/560/630/710/800": 70,
+                "900/1000/1120": 70
+            }
+        ]
+    },
+    {
+        "Details": "S",
+        "Columns": [
+            "Serviço",
+            "560/630/710/800 liso ",
+            "900/1000/1120/1250 liso ",
+            "1120/1250 4p",
+            "900/1000/1200 Saliente",
+            "1250 até 1800 Saliente"
+        ],
+        "Data": [
+            {
+                "Serviço": "Manutenção preventiva",
+                "560/630/710/800 liso ": 57,
+                "900/1000/1120/1250 liso ": 57,
+                "1120/1250 4p": 57,
+                "900/1000/1200 Saliente": 57,
+                "1250 até 1800 Saliente": 57
+            },
+            {
+                "Serviço": "Rebobinamento do estator principal",
+                "560/630/710/800 liso ": 70,
+                "900/1000/1120/1250 liso ": 70,
+                "1120/1250 4p": 75,
+                "900/1000/1200 Saliente": 75,
+                "1250 até 1800 Saliente": 75
+            },
+            {
+                "Serviço": "Rebobinamento do rotor principal",
+                "560/630/710/800 liso ": 70,
+                "900/1000/1120/1250 liso ": 70,
+                "1120/1250 4p": 85,
+                "900/1000/1200 Saliente": 85,
+                "1250 até 1800 Saliente": 85
+            },
+            {
+                "Serviço": "Substituição das capas de Aço",
+                "560/630/710/800 liso ": null,
+                "900/1000/1120/1250 liso ": 230,
+                "1120/1250 4p": 230,
+                "900/1000/1200 Saliente": 230,
+                "1250 até 1800 Saliente": 230
+            },
+            {
+                "Serviço": "Reeembarralhamento do pacote de chapas do estator",
+                "560/630/710/800 liso ": 75,
+                "900/1000/1120/1250 liso ": 75,
+                "1120/1250 4p": 75,
+                "900/1000/1200 Saliente": 75,
+                "1250 até 1800 Saliente": 75
+            },
+            {
+                "Serviço": "Substituição do pacote de chapas estator principal",
+                "560/630/710/800 liso ": 75,
+                "900/1000/1120/1250 liso ": 75,
+                "1120/1250 4p": 75,
+                "900/1000/1200 Saliente": 75,
+                "1250 até 1800 Saliente": 75
+            },
+            {
+                "Serviço": "Substituição do rotor completo",
+                "560/630/710/800 liso ": 85,
+                "900/1000/1120/1250 liso ": 85,
+                "1120/1250 4p": 85,
+                "900/1000/1200 Saliente": 85,
+                "1250 até 1800 Saliente": 85
+            },
+            {
+                "Serviço": "Substituição do eixo",
+                "560/630/710/800 liso ": 85,
+                "900/1000/1120/1250 liso ": 85,
+                "1120/1250 4p": 85,
+                "900/1000/1200 Saliente": 85,
+                "1250 até 1800 Saliente": 85
+            },
+            {
+                "Serviço": "Substituição do trocador de calor",
+                "560/630/710/800 liso ": 70,
+                "900/1000/1120/1250 liso ": 70,
+                "1120/1250 4p": 70,
+                "900/1000/1200 Saliente": 70,
+                "1250 até 1800 Saliente": 70
+            },
+            {
+                "Serviço": "Substituição dos mancais",
+                "560/630/710/800 liso ": 70,
+                "900/1000/1120/1250 liso ": 70,
+                "1120/1250 4p": 70,
+                "900/1000/1200 Saliente": 70,
+                "1250 até 1800 Saliente": 70
+            }
+        ]
+    },
+    {
+        "Details": "CC",
+        "Columns": [
+            "Serviço",
+            "160 até 355",
+            "400/450/500",
+            "560/630/710/800"
+        ],
+        "Data": [
+            {
+                "Serviço": "Manutenção preventiva",
+                "160 até 355": 57,
+                "400/450/500": 57,
+                "560/630/710/800": 57
+            },
+            {
+                "Serviço": "Rebobinamento da carcaça ( Campo/compensação/comutação)",
+                "160 até 355": 67,
+                "400/450/500": 77,
+                "560/630/710/800": 87
+            },
+            {
+                "Serviço": "Rebobinamento da armadura",
+                "160 até 355": 75,
+                "400/450/500": 90,
+                "560/630/710/800": 105
+            },
+            {
+                "Serviço": "Rebobinamento da carcaça e armadura",
+                "160 até 355": 75,
+                "400/450/500": 90,
+                "560/630/710/800": 105
+            },
+            {
+                "Serviço": "Substituição do comutador",
+                "160 até 355": 90,
+                "400/450/500": 110,
+                "560/630/710/800": 125
+            },
+            {
+                "Serviço": "Substituição da armadura",
+                "160 até 355": 90,
+                "400/450/500": 110,
+                "560/630/710/800": 125
+            },
+            {
+                "Serviço": "Substituição do eixo",
+                "160 até 355": 67,
+                "400/450/500": 80,
+                "560/630/710/800": 80
+            },
+            {
+                "Serviço": "Substituição dos mancais",
+                "160 até 355": 67,
+                "400/450/500": 80,
+                "560/630/710/800": 90
+            }
+        ]
+    },
+    {
+        "Details": "H",
+        "Columns": [
+            "Serviço",
+            "H 450 500",
+            "H  560 630 710"
+        ],
+        "Data": [
+            {
+                "Serviço": "Manutenção preventiva ",
+                "H 450 500": 55,
+                "H  560 630 710": 55
+            },
+            {
+                "Serviço": "Rebobinamento do estator",
+                "H 450 500": 65,
+                "H  560 630 710": 65
+            },
+            {
+                "Serviço": "Substituição dos aneis de curto da gaiola do rotor",
+                "H 450 500": 65,
+                "H  560 630 710": 65
+            },
+            {
+                "Serviço": "Substituição carcaça",
+                "H 450 500": 70,
+                "H  560 630 710": 70
+            },
+            {
+                "Serviço": "Reeembarralhamento do pacote de chapas",
+                "H 450 500": 70,
+                "H  560 630 710": 70
+            },
+            {
+                "Serviço": "Substituição do pacote de chapas estator",
+                "H 450 500": 70,
+                "H  560 630 710": 70
+            },
+            {
+                "Serviço": "Substituição do rotor completo",
+                "H 450 500": 70,
+                "H  560 630 710": 70
+            },
+            {
+                "Serviço": "Substituição do eixo",
+                "H 450 500": 70,
+                "H  560 630 710": 70
+            }
+        ]
+    }
+]
