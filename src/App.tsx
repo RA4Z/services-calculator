@@ -5,6 +5,7 @@ import './App.css';
 
 function App() {
   const [details, setDetails] = useState<string[]>([])
+  const [totalTime, setTotalTime] = useState(0)
   const [data, setData] = useState<any>();
   const [specials, setSpecials] = useState<any>()
   const [formData, setFormData] = useState({
@@ -21,7 +22,16 @@ function App() {
 
   useEffect(() => {
     console.log(formData)
-  }, [formData])
+    let timeService = 0
+    let timeSpecial = 0
+    if (formData.materialEspecial !== '') {
+      timeSpecial = specials.find((item: any) => item.Componente === formData.materialEspecial).total
+    }
+    if (formData.servico !== '') {
+      timeService = data.Data.find((item: any) => item.Serviço === formData.servico)[formData.tamanhoMaquina]
+    }
+    setTotalTime(timeSpecial > timeService ? timeSpecial : timeService)
+  }, [formData, specials, data])
 
   const handleChange = (event: any) => {
     const { name, value } = event.target;
@@ -42,7 +52,7 @@ function App() {
   return (
     <div className="container">
       <form onSubmit={handleSubmit} className="form">
-        <h2 className="form__title">Dados da Máquina</h2>
+        <h2 className="form__title">Calculadora para Serviços</h2>
 
         <div className="form__group">
           <label htmlFor="nomeMaquina" className="form__label">
@@ -121,9 +131,9 @@ function App() {
           </select>
         </div>
 
-        <button type="submit" className="form__button">
-          Calcular Tempo
-        </button>
+        <div className="form__button">
+          Tempo total de Serviço: {totalTime} dias
+        </div>
       </form>
     </div>
   );
