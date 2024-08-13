@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import Database from './database/data.json'
+import Especiais from './database/especiais.json'
 import './App.css';
 
 function App() {
   const [details, setDetails] = useState<string[]>([])
   const [data, setData] = useState<any>();
+  const [specials, setSpecials] = useState<any>()
   const [formData, setFormData] = useState({
     nomeMaquina: '',
     servico: '',
@@ -14,6 +16,7 @@ function App() {
 
   useEffect(() => {
     setDetails(Database.map(item => item.Details))
+    setSpecials(Especiais)
   }, [])
 
   useEffect(() => {
@@ -81,29 +84,42 @@ function App() {
           <label htmlFor="servico" className="form__label">
             Serviço:
           </label>
-          <input
-            type="text"
+          <select
             id="servico"
             name="servico"
             value={formData.servico}
             onChange={handleChange}
             className="form__input"
-            required
-          />
+            required >
+            <option value="">Selecione o serviço</option>
+            {data !== undefined && data.Services.map((servico: any, index: any) => (
+              <option key={index} value={servico}>
+                {servico}
+              </option>
+            ))}
+          </select>
         </div>
 
         <div className="form__group">
           <label htmlFor="materialEspecial" className="form__label">
             Material Especial:
           </label>
-          <input
-            type="text"
+          <select
             id="materialEspecial"
             name="materialEspecial"
             value={formData.materialEspecial}
             onChange={handleChange}
-            className="form__input" />
+            className="form__input"
+            required >
+            <option value="">Selecione o serviço</option>
+            {specials !== undefined && specials.map((item: any, index: any) => (
+              <option key={index} value={item.Componente}>
+                {item.Componente}
+              </option>
+            ))}
+          </select>
         </div>
+
         <button type="submit" className="form__button">
           Enviar
         </button>

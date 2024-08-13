@@ -6,6 +6,17 @@
             "500/560/630/710/800",
             "900/1000/1120"
         ],
+        "Services": [
+            "Manutenção preventiva ",
+            "Rebobinamento do estator",
+            "Substituição dos aneis de curto da gaiola do rotor",
+            "Reeembarralhamento do pacote de chapas ",
+            "Substituição do pacote de chapas estator",
+            "Substituição do rotor completo",
+            "Substituição do eixo",
+            "Substituição dos mancais",
+            "Substituição de tubos do trocador de calor"
+        ],
         "Data": [
             {
                 "Serviço": "Manutenção preventiva ",
@@ -69,6 +80,17 @@
             "280/315/355/400/450",
             "500/560/630/710/800",
             "900/1000/1120"
+        ],
+        "Services": [
+            "Manutenção preventiva",
+            "Rebobinamento do estator ",
+            "Rebobinamento do rotor ",
+            "Reeembarralhamento do pacote de chapas estator",
+            "Substituição do pacote de chapas estator",
+            "Substituição do rotor completo",
+            "Substituição do eixo",
+            "Substituição dos mancais",
+            "Substituição do trocador de calor"
         ],
         "Data": [
             {
@@ -135,6 +157,18 @@
             "1120/1250 4p",
             "900/1000/1200 Saliente",
             "1250 até 1800 Saliente"
+        ],
+        "Services": [
+            "Manutenção preventiva",
+            "Rebobinamento do estator principal",
+            "Rebobinamento do rotor principal",
+            "Substituição das capas de Aço",
+            "Reeembarralhamento do pacote de chapas do estator",
+            "Substituição do pacote de chapas estator principal",
+            "Substituição do rotor completo",
+            "Substituição do eixo",
+            "Substituição do trocador de calor",
+            "Substituição dos mancais"
         ],
         "Data": [
             {
@@ -226,6 +260,16 @@
             "400/450/500",
             "560/630/710/800"
         ],
+        "Services": [
+            "Manutenção preventiva",
+            "Rebobinamento da carcaça ( Campo/compensação/comutação)",
+            "Rebobinamento da armadura",
+            "Rebobinamento da carcaça e armadura",
+            "Substituição do comutador",
+            "Substituição da armadura",
+            "Substituição do eixo",
+            "Substituição dos mancais"
+        ],
         "Data": [
             {
                 "Serviço": "Manutenção preventiva",
@@ -282,6 +326,16 @@
         "Columns": [
             "H 450 500",
             "H  560 630 710"
+        ],
+        "Services": [
+            "Manutenção preventiva ",
+            "Rebobinamento do estator",
+            "Substituição dos aneis de curto da gaiola do rotor",
+            "Substituição carcaça",
+            "Reeembarralhamento do pacote de chapas",
+            "Substituição do pacote de chapas estator",
+            "Substituição do rotor completo",
+            "Substituição do eixo"
         ],
         "Data": [
             {
