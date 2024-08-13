@@ -27,8 +27,10 @@ function App() {
     const { name, value } = event.target;
     if (value !== data?.Details && name === 'nomeMaquina') {
       setData(Database.filter(item => value === item.Details)[0]);
+      setFormData({ ...formData, [name]: value, servico: '', tamanhoMaquina: '' })
+    } else {
+      setFormData({ ...formData, [name]: value });
     }
-    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (event: any) => {
@@ -81,6 +83,25 @@ function App() {
         </div>
 
         <div className="form__group">
+          <label htmlFor="materialEspecial" className="form__label">
+            Material Especial:
+          </label>
+          <select
+            id="materialEspecial"
+            name="materialEspecial"
+            value={formData.materialEspecial}
+            onChange={handleChange}
+            className="form__input" >
+            <option value="">Selecione o Material</option>
+            {specials !== undefined && specials.map((item: any, index: any) => (
+              <option key={index} value={item.Componente}>
+                {item.Componente}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="form__group">
           <label htmlFor="servico" className="form__label">
             Serviço:
           </label>
@@ -100,28 +121,8 @@ function App() {
           </select>
         </div>
 
-        <div className="form__group">
-          <label htmlFor="materialEspecial" className="form__label">
-            Material Especial:
-          </label>
-          <select
-            id="materialEspecial"
-            name="materialEspecial"
-            value={formData.materialEspecial}
-            onChange={handleChange}
-            className="form__input"
-            required >
-            <option value="">Selecione o serviço</option>
-            {specials !== undefined && specials.map((item: any, index: any) => (
-              <option key={index} value={item.Componente}>
-                {item.Componente}
-              </option>
-            ))}
-          </select>
-        </div>
-
         <button type="submit" className="form__button">
-          Enviar
+          Calcular Tempo
         </button>
       </form>
     </div>
