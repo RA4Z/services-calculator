@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
-import Database from './database/data.json'
-import Especiais from './database/especiais.json'
 import './styles.css';
 
 interface Props {
   setSearch: any
   setTime: any
+  Database: any,
+  Especiais: any
 }
 
-export default function Calculadora({ setTime, setSearch }: Props) {
+export default function Calculadora({ setTime, setSearch, Database, Especiais }: Props) {
   const [details, setDetails] = useState<string[]>([])
   const [totalTime, setTotalTime] = useState(0)
   const [data, setData] = useState<any>();
@@ -21,9 +21,9 @@ export default function Calculadora({ setTime, setSearch }: Props) {
   });
 
   useEffect(() => {
-    setDetails(Database.map(item => item.Details))
+    setDetails(Database.map((item: any) => item.Details))
     setSpecials(Especiais)
-  }, [])
+  }, [Database, Especiais])
 
   useEffect(() => {
     let timeService = 0
@@ -41,7 +41,7 @@ export default function Calculadora({ setTime, setSearch }: Props) {
   const handleChange = (event: any) => {
     const { name, value } = event.target;
     if (value !== data?.Details && name === 'nomeMaquina') {
-      setData(Database.filter(item => value === item.Details)[0]);
+      setData(Database.filter((item: any) => value === item.Details)[0]);
       setFormData({ ...formData, [name]: value, servico: '', tamanhoMaquina: '' })
     } else {
       setFormData({ ...formData, [name]: value });
