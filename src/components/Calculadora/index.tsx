@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './styles.css';
+import { registerCalculator } from '../../services/connection';
 
 interface Props {
   setSearch: any
@@ -47,12 +48,12 @@ export default function Calculadora({ setTime, setSearch, Database, Especiais }:
       setFormData({ ...formData, [name]: value });
     }
   };
-
-  const handleSubmit = (event: any) => {
+  
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
-    console.log(totalTime)
     setSearch(true)
     setTime(totalTime)
+    await registerCalculator(totalTime)
   };
 
   return (

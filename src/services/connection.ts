@@ -1,5 +1,15 @@
 import axios from 'axios';
 
+export async function registerCalculator(result: any) {
+    const url = 'http://10.1.43.63:5000/SbcCalculator/Register';
+    const data = {
+        result: result,
+    };
+    await axios.post(url, data, {
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    });
+}
+
 export async function getServices() {
     try {
         const url = 'http://10.1.43.63:5000/SbcCalculator/Services/Display';
