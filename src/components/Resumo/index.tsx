@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Button, notification } from 'antd';
 import './styles.css'
 
@@ -9,22 +9,21 @@ interface Props {
 }
 
 export default function Resumo({ time, search, setSearch }: Props) {
-    const [notificationOpen, setNotificationOpen] = useState(false);
+    const [api, contextHolder] = notification.useNotification();
 
     const openNotification = () => {
-        if (!notificationOpen) {
-            notification.open({
-                message: 'Tempo de Serviço Calculado',
-                description: (
-                    <p>O tempo total desse serviço é de {time} dias!</p>
-                ),
-                duration: 7,
-                closeIcon: null,
-                placement: 'topRight',
-                onClose: () => setNotificationOpen(false),
-            });
-            setNotificationOpen(true);
-        }
+        const key = `notification-${time}`; // Cria uma chave única para cada notificação
+
+        api.open({
+            key: key, // Define a chave única
+            message: 'Tempo de Serviço Calculado',
+            description: (
+                <p>O tempo total desse serviço é de {time} dias!</p>
+            ),
+            duration: 0,
+            closeIcon: true,
+            placement: 'topRight',
+        });
     };
 
     useEffect(() => {
@@ -32,12 +31,15 @@ export default function Resumo({ time, search, setSearch }: Props) {
             openNotification();
             setSearch(false)
         }
-    }, [time, search, setSearch])
+    }, [time, search, setSearch]);
 
     return (
-        <Button
-            type="primary"
-            onClick={openNotification}
-            style={{ display: 'none' }} />
+        <>
+            {contextHolder} {/* Renderiza o contexto da notificação */}
+            <Button
+                type="primary"
+                onClick={openNotification}
+                style={{ display: 'none' }} />
+        </>
     )
 }
