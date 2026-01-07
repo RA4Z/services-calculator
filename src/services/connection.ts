@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export async function registerCalculator(result: any) {
-    const url = 'http://10.1.43.63:5000/SbcCalculator/Register';
+    const url = 'http://10.1.43.72:5000/SbcCalculator/Register';
     const data = {
         result: result,
     };
@@ -12,7 +12,7 @@ export async function registerCalculator(result: any) {
 
 export async function getServices() {
     try {
-        const url = 'http://10.1.43.63:5000/SbcCalculator/Services/Display';
+        const url = 'http://10.1.43.72:5000/SbcCalculator/Services/Display';
         const response = await axios.get(url, {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         });
@@ -31,7 +31,7 @@ export async function getServices() {
 
 export async function getSpecials() {
     try {
-        const url = 'http://10.1.43.63:5000/SbcCalculator/Specials/Display';
+        const url = 'http://10.1.43.72:5000/SbcCalculator/Specials/Display';
         const response = await axios.get(url, {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         });
