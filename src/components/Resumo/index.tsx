@@ -31,7 +31,7 @@ export default function Resumo({ time, search, setSearch }: Props) {
             openNotification();
             setSearch(false)
         }
-    }, [time, search, setSearch]);
+    }, [time, search, setSearch, openNotification]);
 
     return (
         <>
