@@ -53,7 +53,7 @@ export default function Calculadora({ setTime, setSearch, Database, Especiais }:
     event.preventDefault();
     setSearch(true)
     setTime(totalTime)
-    await registerCalculator(totalTime)
+    registerCalculator(totalTime)
   };
 
   return (

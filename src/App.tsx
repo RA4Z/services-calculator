@@ -8,13 +8,13 @@ import { getServices, getSpecials } from "./services/connection";
 export default function App() {
   const [time, setTime] = useState(0);
   const [search, setSearch] = useState(false);
-  const [database, setDatabase] = useState([])
-  const [special, setSpecial] = useState([])
+  const [database, setDatabase] = useState<any>([])
+  const [special, setSpecial] = useState<any>([])
 
   useEffect(() => {
     async function runEffect() {
-      if (database.length === 0) setDatabase(await getServices())
-      if (special.length === 0) setSpecial(await getSpecials())
+      if (database.length === 0) setDatabase(getServices())
+      if (special.length === 0) setSpecial(getSpecials())
     }
     runEffect()
   }, [database, special])
